@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mBb-cO-fk3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="2qr-Vp-bAk">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="glJ-Hd-iBL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="x0S-fE-3fq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tk5-BR-yY9">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TbD-7a-NCs" kind="relationship" relationship="rootViewController" id="mZr-en-GDt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLe-hl-pB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="-537"/>
+        </scene>
+        <!--Tab1 Child View Controller1-->
+        <scene sceneID="IhW-Jo-uj5">
+            <objects>
+                <viewController id="TbD-7a-NCs" customClass="Tab1ChildViewController1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vl9-oD-WjU">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGY-V0-1W6">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="GlX-dq-KBO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="04B-3U-SYG" kind="push" id="KiP-iD-L8m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abd-WD-lHw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="7W1-wM-Uo3"/>
+                                    <constraint firstAttribute="height" constant="78" id="oqD-IQ-nnf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="abd-WD-lHw" firstAttribute="top" secondItem="Vl9-oD-WjU" secondAttribute="top" constant="189" id="Cny-Le-DPf"/>
+                            <constraint firstItem="abd-WD-lHw" firstAttribute="centerX" secondItem="iGY-V0-1W6" secondAttribute="centerX" type="default" id="VzI-i6-lbz"/>
+                            <constraint firstItem="abd-WD-lHw" firstAttribute="centerX" secondItem="Vl9-oD-WjU" secondAttribute="centerX" type="default" id="c7g-u8-mFL"/>
+                            <constraint firstAttribute="bottom" secondItem="iGY-V0-1W6" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="lsL-Pp-MgH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lq4-vf-NbQ">
+                        <barButtonItem key="rightBarButtonItem" title="Show Another" id="MhG-HE-x1y">
+                            <connections>
+                                <action selector="showAnotherViewButtonDidTouch:" destination="TbD-7a-NCs" id="E1h-fC-mdf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruS-hX-c2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="-537"/>
+        </scene>
+        <!--Tab1 Child View Controller2-->
+        <scene sceneID="RXh-lp-Whb">
+            <objects>
+                <viewController id="04B-3U-SYG" customClass="Tab1ChildViewController2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="72M-vF-eDF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN6-dL-Flc">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="2pk-Ob-Gtm"/>
+                                    <constraint firstAttribute="width" constant="140" id="tx2-AU-nak"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-xA-dF6">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="5sv-ZV-Ygy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Open">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openButtonDidTouch:" destination="04B-3U-SYG" eventType="touchUpInside" id="2AA-rb-3bu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Xha-xA-dF6" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="JIE-N2-EnP"/>
+                            <constraint firstItem="WN6-dL-Flc" firstAttribute="top" secondItem="72M-vF-eDF" secondAttribute="top" constant="189" id="TwY-Cp-zXi"/>
+                            <constraint firstItem="Xha-xA-dF6" firstAttribute="centerX" secondItem="72M-vF-eDF" secondAttribute="centerX" type="default" id="WRU-VS-l09"/>
+                            <constraint firstItem="Xha-xA-dF6" firstAttribute="centerX" secondItem="WN6-dL-Flc" secondAttribute="centerX" type="default" id="yUc-kT-L0Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XCc-LH-ARR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ga-w4-2xq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="-537"/>
+        </scene>
+        <!--Tab2 Child View Controller - Item 2-->
+        <scene sceneID="aED-kP-Y7x">
+            <objects>
+                <viewController id="mtt-mN-sER" customClass="Tab2ChildViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gF9-Vc-oQv">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nF7-MU-L5y">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="07O-se-T7T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Open">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openButtonDidTouch:" destination="mtt-mN-sER" eventType="touchUpInside" id="OBT-Q7-7WD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nF7-MU-L5y" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="RG2-D7-bhC"/>
+                            <constraint firstItem="nF7-MU-L5y" firstAttribute="centerX" secondItem="gF9-Vc-oQv" secondAttribute="centerX" type="user" id="aAC-Y7-sTE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="bgs-R7-WPC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeh-yi-oOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="179"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KCS-PO-iGb">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="mBb-cO-fk3" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="p2B-mY-GB7">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="glJ-Hd-iBL" kind="relationship" relationship="viewControllers" id="CQg-Nv-PqP"/>
+                        <segue destination="mtt-mN-sER" kind="relationship" relationship="viewControllers" id="tlS-y8-Maj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhk-ud-Uth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-415" y="-147"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="Tab1ChildViewController1" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Tab1ChildViewController1.h"/>
+            <relationships>
+                <relationship kind="action" name="showAnotherViewButtonDidTouch:"/>
+            </relationships>
+        </class>
+        <class className="Tab1ChildViewController2" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Tab1ChildViewController2.h"/>
+            <relationships>
+                <relationship kind="action" name="openButtonDidTouch:"/>
+            </relationships>
+        </class>
+        <class className="Tab2ChildViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Tab2ChildViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="openButtonDidTouch:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
